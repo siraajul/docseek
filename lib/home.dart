@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
         height: 350,
         width: double.infinity,
         child: const Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'Hi Edi',
