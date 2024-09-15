@@ -12,26 +12,44 @@ class HomePage extends StatelessWidget {
         height: 350,
         padding: const EdgeInsets.all(16),
         width: double.infinity,
-        child: const Column(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Hi Edi',
-              style: TextStyle(fontSize: 18, color: Colors.white),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //Right Text
+                const Text(
+                  'Hi Edi',
+                  style: TextStyle(fontSize: 18, color: Colors.white),
+                ),
+                //Right Icon
+                Container(
+                  height: 45,
+                  width: 45,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.3),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                )
+              ],
             ),
-            Text(
-              "Let's find\nyour top doctor",
+            const SizedBox(
+              height: 30,
+            ),
+            const Text(
+              "Let's find\nyour top doctor!",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 28,
                   fontWeight: FontWeight.w600),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             //------------------------SearchBar---------------------------------
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                   filled: true,
                   fillColor: Colors.white,
@@ -41,7 +59,7 @@ class HomePage extends StatelessWidget {
                   border: OutlineInputBorder(
                       borderSide: BorderSide.none,
                       borderRadius: BorderRadius.all(Radius.circular(50)))),
-            )
+            ),
           ],
         ),
       ),
