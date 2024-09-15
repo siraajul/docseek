@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
-
+        color: Color(0xff51A8FF),
       ),
     );
   }
