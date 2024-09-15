@@ -27,6 +27,21 @@ class HomePage extends StatelessWidget {
                   fontSize: 28,
                   fontWeight: FontWeight.w600),
             ),
+            SizedBox(
+              height: 30,
+            ),
+            //------------------------SearchBar---------------------------------
+            TextField(
+              decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Colors.white,
+                  hintText: 'Search Here....',
+                  hintStyle: TextStyle(fontWeight: FontWeight.w400),
+                  prefixIcon: Icon(Icons.search),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide.none,
+                      borderRadius: BorderRadius.all(Radius.circular(50)))),
+            )
           ],
         ),
       ),
