@@ -10,6 +10,15 @@ class HomePage extends StatelessWidget {
       body: Container(
         color: const Color(0xff51A8FF),
         height: 350,
+        width: double.infinity,
+        child: const Column(
+          children: [
+            Text(
+              'Hi Edi',
+              style: TextStyle(fontSize: 16),
+            )
+          ],
+        ),
       ),
     );
   }
