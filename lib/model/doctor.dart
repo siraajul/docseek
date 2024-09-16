@@ -33,7 +33,7 @@ class DoctorModel {
           image: 'assets/images/kristin.png',
           imageBox: const Color(0xff3CFFC4).withOpacity(0.75),
           specialties: ['General Surgeon', 'Heart Surgeon', 'Cardiology Specialist'],
-          score: 4.8,
+          score: 4.7,
         )
     );
     return doctors;
