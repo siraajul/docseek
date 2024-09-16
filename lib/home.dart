@@ -1,5 +1,6 @@
 import 'package:docseek/model/category.dart';
 import 'package:docseek/model/doctor.dart';
+import 'package:docseek/pages/details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'ui/home/header.dart';
@@ -97,7 +98,8 @@ class _HomePageState extends State<HomePage> {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>DetailsPage(),)
+              );
             },
             child: Container(
               height: 100,
@@ -164,9 +166,10 @@ class _HomePageState extends State<HomePage> {
             ),
           );
         },
-        separatorBuilder: (context, index) => const SizedBox(
-              height: 15,
-            ),
+        separatorBuilder: (context, index) =>
+        const SizedBox(
+          height: 15,
+        ),
         itemCount: doctorsData.length);
   }
 }
