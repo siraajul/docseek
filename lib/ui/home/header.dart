@@ -16,7 +16,7 @@ Container header() {
           children: [
             //Right Text
             const Text(
-              'Hi Edi',
+              'Hi Shayeri !',
               style: TextStyle(fontSize: 18, color: Colors.white),
             ),
             //Right Icon
@@ -35,7 +35,7 @@ Container header() {
           height: 30,
         ),
         const Text(
-          "Let's find\nyour top doctor!",
+          "Let's find\nyour doctor!",
           style: TextStyle(
               color: Colors.white,
               fontSize: 28,
