@@ -38,75 +38,73 @@ class DetailsPage extends StatelessWidget {
           style: TextStyle(fontSize: 18),
         ),
       ),
-      body: Column(
-        children: [info()],
+      body: Padding(
+        padding: const EdgeInsets.all(16 .0),
+        child: Column(
+          children: [info()],
+        ),
       ),
     );
   }
 
   Widget info() {
-    return Container(
-      height: 100,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-                color: const Color(0xff51A8FF).withOpacity(0.07),
-                offset: const Offset(0, 4),
-                blurRadius: 20)
-          ]),
-      child: Row(
-        children: [
-          Container(
-            width: 105,
-            decoration: BoxDecoration(
-                color: doctorModel.imageBox,
-                borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                    alignment: Alignment.bottomCenter,
-                    image: AssetImage(doctorModel.image))),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  doctorModel.name,
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w600, fontSize: 18),
-                ),
-                Text(
-                  doctorModel.specialties.first,
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w400, fontSize: 12),
-                ),
-                const SizedBox(
-                  height: 05,
-                ),
-                const Spacer(),
-                Row(
+    return Column(
+      children: [
+        SizedBox(
+          height: 100,
+          child: Row(
+            children: [
+              Container(
+                width: 105,
+                decoration: BoxDecoration(
+                    color: doctorModel.imageBox,
+                    borderRadius: BorderRadius.circular(16),
+                    image: DecorationImage(
+                        alignment: Alignment.bottomCenter,
+                        image: AssetImage(doctorModel.image))),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Icon(
-                      Icons.star,
-                      color: Colors.amber,
-                    ),
-                    const SizedBox(
-                      width: 5,
+                    Text(
+                      doctorModel.name,
+                      style: const TextStyle(
+                          fontWeight: FontWeight.w600, fontSize: 18),
                     ),
                     Text(
-                      doctorModel.score.toString(),
+                      doctorModel.specialties.first,
                       style: const TextStyle(
-                          fontWeight: FontWeight.w300, fontSize: 12),
+                          fontWeight: FontWeight.w400, fontSize: 12),
+                    ),
+                    const SizedBox(
+                      height: 05,
+                    ),
+                    const Spacer(),
+                    Row(
+                      children: [
+                        const Icon(
+                          Icons.star,
+                          color: Colors.amber,
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          doctorModel.score.toString(),
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w300, fontSize: 12),
+                        )
+                      ],
                     )
                   ],
-                )
-              ],
-            ),
-          )
-        ],
-      ),
+                ),
+              )
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
