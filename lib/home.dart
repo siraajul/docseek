@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Text(
-                  'Hi Edi',
+                  'Hi Shayeri',
                   style: TextStyle(
                       fontSize: 18,
                       color: Color(0xffFFFFFF)
@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 30,),
             const Text(
-              "Let's find\nyour top doctor!",
+              "Let's find\ntop doctor!",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 28,
