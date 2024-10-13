@@ -1,16 +1,50 @@
-# docseek
+# DocSeek
 
-A new Flutter project.
+**DocSeek** is a basic-level Flutter application that helps users find doctors and view their available appointment times.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Home Screen:** Displays categories of doctors for easy navigation.
+- **Doctor Details Screen:** Shows detailed information about a selected doctor, including available dates and times for appointments.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Home Screen
+<img src = "screenshots/screen01.png" width ="200" />
+### Doctor Details Screen
+<img src = "screenshots/screen02.png" width ="200" />
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/docseek.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd docseek
+    ```
+3. Install dependencies:
+    ```bash
+    flutter pub get
+    ```
+4. Run the app:
+    ```bash
+    flutter run
+    ```
+
+## Technologies
+
+- **Flutter**: UI toolkit for building natively compiled applications for mobile.
+- **Dart**: The programming language used to develop the app.
+
+## Contribution
+
+Contributions are welcome! Please open an issue or submit a pull request if you'd like to help improve the project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
